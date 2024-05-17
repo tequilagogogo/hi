@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Day Against Homophobia, Transphobia and Biphobia - May 17</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #6a1b9a;
+            color: #fff;
+            padding: 2em 0;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            animation: fadeInDown 2s ease;
+        }
+        header h2 {
+            margin: 0;
+            font-size: 1.5em;
+            animation: fadeInUp 2s ease;
+        }
+        @keyframes fadeInDown {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        nav {
+            text-align: center;
+            margin: 2em 0;
+        }
+        nav a {
+            margin: 0 1em;
+            color: #6a1b9a;
+            text-decoration: none;
+            font-weight: bold;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #4a0072;
+        }
+        section {
+            padding: 2em;
+            margin: 1em 0;
+            background-color: #fff;
+            border-radius: 12px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .cta {
+            background-color: #6a1b9a;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            margin-top: 2em;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+        .cta:hover {
+            background-color: #4a0072;
+        }
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #333;
+            color: #fff;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: border-color 0.3s ease;
+        }
+        .contact-form input:focus, .contact-form textarea:focus {
+            border-color: #6a1b9a;
+            outline: none;
+        }
+        .contact-form button {
+            padding: 1em 2em;
+            border: none;
+            background-color: #6a1b9a;
+            color: #fff;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .contact-form button:hover {
+            background-color: #4a0072;
+        }
+        .language-toggle {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2em;
+        }
+        .language-toggle button {
+            background-color: transparent;
+            border: 2px solid #6a1b9a;
+            color: #6a1b9a;
+            padding: 0.5em 1em;
+            margin: 0 0.5em;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .language-toggle button:hover {
+            background-color: #6a1b9a;
+            color: #fff;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1em;
+            margin: 2em 0;
+        }
+        .gallery img {
+            width: calc(33% - 2em);
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 id="header-title">International Day Against Homophobia, Transphobia and Biphobia</h1>
+        <h2 id="header-subtitle">May 17</h2>
+    </header>
+
+    <nav>
+        <a href="#about" id="nav-about">About</a>
+        <a href="#history" id="nav-history">History</a>
+        <a href="#activities" id="nav-activities">Activities</a>
+        <a href="#contact" id="nav-contact">Contact</a>
+    </nav>
+
+    <div class="language-toggle">
+        <button onclick="switchLanguage('en')">English</button>
+        <button onclick="switchLanguage('zh')">中文</button>
+    </div>
+
+    <section id="about">
+        <h2 id="about-title">About May 17</h2>
+        <p id="about-content">May 17 is the International Day Against Homophobia, Transphobia and Biphobia, an annual landmark to draw the attention of policymakers, opinion leaders, social movements, the public and the media to the violence and discrimination experienced by lesbian, gay, bisexual, transgender, intersex people and all other people with diverse sexual orientations, gender identities or expressions, and sex characteristics.</p>
+    </section>
+
+    <section id="history">
+        <h2 id="history-title">History</h2>
+        <p id="history-content">The date of May 17 was specifically chosen to commemorate the World Health Organization's decision in 1990 to declassify homosexuality as a mental disorder. Since then, May 17 has become a global celebration, with events happening in more than 130 countries, including 37 where same-sex acts are illegal.</p>
+    </section>
+
+    <section id="activities">
+        <h2 id="activities-title">Activities</h2>
+        <p id="activities-content">Events to celebrate May 17 include marches, parades, rallies, cultural performances, workshops, and educational sessions. These events aim to raise awareness, promote tolerance, and advocate for the rights of the LGBT community.</p>
+        <div class="cta" onclick="showSupport()">Show Your Support</div>
+    </section>
+
+    <div class="gallery">
+        <img src="https://cdn.pixabay.com/photo/2023/08/04/07/22/people-8168554_1280.jpg" alt="Image 1">
+        <img src="https://cdn.pixabay.com/photo/2019/10/15/20/10/flag-4552833_1280.jpg" alt="Image 2">
+        <img src="https://cdn.pixabay.com/photo/2017/10/28/16/14/kiss-2897402_1280.jpg" alt="Image 3">
+        <img src="https://cdn.pixabay.com/photo/2022/07/10/19/47/pride-parade-7313660_1280.jpg" alt="Image 4">
+        <img src="https://cdn.pixabay.com/photo/2022/07/15/12/11/people-7323047_1280.jpg" alt="Image 5">
+        <img src="https://cdn.pixabay.com/photo/2022/02/11/08/00/pride-7006723_1280.jpg" alt="Image 6">
+    </div>
+
+    <section id="contact">
+        <h2 id="contact-title">Contact</h2>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 朱燕秋</p>
+    </footer>
+
+    <script>
+        function showSupport() {
+            alert("Thank you for your support!");
+        }
+
+        function switchLanguage(lang) {
+            const elements = {
+                en: {
+                    'header-title': 'International Day Against Homophobia, Transphobia and Biphobia',
+                    'header-subtitle': 'May 17',
+                    'nav-about': 'About',
+                    'nav-history': 'History',
+                    'nav-activities': 'Activities',
+                    'nav-contact': 'Contact',
+                    'about-title': 'About May 17',
+                    'about-content': 'May 17 is the International Day Against Homophobia, Transphobia and Biphobia, an annual landmark to draw the attention of policymakers, opinion leaders, social movements, the public and the media to the violence and discrimination experienced by lesbian, gay, bisexual, transgender, intersex people and all other people with diverse sexual orientations, gender identities or expressions, and sex characteristics.',
+                    'history-title': 'History',
+                    'history-content': 'The date of May 17 was specifically chosen to commemorate the World Health Organization\'s decision in 1990 to declassify homosexuality as a mental disorder. Since then, May 17 has become a global celebration, with events happening in more than 130 countries, including 37 where same-sex acts are illegal.',
+                    'activities-title': 'Activities',
+                    'activities-content': 'Events to celebrate May 17 include marches, parades, rallies, cultural performances, workshops, and educational sessions. These events aim to raise awareness, promote tolerance, and advocate for the rights of the LGBT community.',
+                    'contact-title': 'Contact'
+                },
+                zh: {
+                    'header-title': '国际反恐同、反跨性别恐惧、反双性恋恐惧日',
+                    'header-subtitle': '5月17日',
+                    'nav-about': '关于',
+                    'nav-history': '历史',
+                    'nav-activities': '活动',
+                    'nav-contact': '联系',
+                    'about-title': '关于5月17日',
+                    'about-content': '5月17日是国际反恐同、反跨性别恐惧、反双性恋恐惧日，这是一个年度标志，旨在引起政策制定者、舆论领袖、社会运动、公众和媒体对同性恋、双性恋、跨性别者、双性人以及所有其他拥有多样性性取向、性别身份或表现、性特征的人所经历的暴力和歧视的关注。',
+                    'history-title': '历史',
+                    'history-content': '选择5月17日作为日期，是为了纪念世界卫生组织在1990年决定将同性恋去病理化。自那时起，5月17日成为了一个全球性的庆祝活动，在超过130个国家举行，包括37个同性性行为仍属非法的国家。',
+                    'activities-title': '活动',
+                    'activities-content': '庆祝5月17日的活动包括游行、集会、文化表演、讲习班和教育会议。这些活动旨在提高意识，促进宽容，并倡导LGBT社区的权利。',
+                    'contact-title': '联系'
+                }
+            };
+
+            for (const [id, text] of Object.entries(elements[lang])) {
+                document.getElementById(id).innerText = text;
+            }
+        }
+    </script>
+
+</body>
+</html>
